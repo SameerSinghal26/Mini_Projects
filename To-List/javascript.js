@@ -35,3 +35,21 @@ let addItem = (inputbox) => {
 
     list.appendChild(listItem);
 }
+
+/*dark mode*/
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    document.body.classList.add(savedTheme);
+    document.querySelector('.checkbox').checked = savedTheme === 'dark-mode';
+}
+
+// Toggle light mode and dark mode
+document.querySelector('.checkbox').addEventListener('change', function() {
+    if (this.checked) {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light-mode');
+    }
+});

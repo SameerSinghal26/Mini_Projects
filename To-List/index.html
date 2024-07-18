@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="to-do-icon.png">
+    <link rel="icon" href="https://github.com/SameerSinghal26/Mini_Projects/blob/29b5517132b575f5d4e247c82dd09d13c3ed03c0/To-List/to-do-icon.png">
     <title>To-Do List</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <!-- Dark Mode and Light Mode Toggle Switch -->
+    <div class="toggle-switch">
+        <label class="switch-label">
+            <input type="checkbox" class="checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
+
     <div class="container">
         <div class="box">
             <h2>To Do List</h2>
@@ -16,12 +24,14 @@
             <ul id="list"></ul>
         </div>
     </div>
+
     <div id="popup" class="popup">
         <div class="popup-content">
             <p>Please write a task...</p>
             <button id="close-popup">OK</button>
         </div>
     </div>
+    
     <script src="javascript.js"></script>
 </body>
 </html>
