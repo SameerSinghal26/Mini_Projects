@@ -4,6 +4,7 @@ let list = document.querySelector('#list');
 let popup = document.querySelector('#popup');
 let close = document.querySelector('#close-popup');
 
+/*Checking the write here box...*/
 inputbox.addEventListener("keyup",function(event){
     if(event.key == "Enter"){
         if(this.value.trim()!== ""){
@@ -15,11 +16,12 @@ inputbox.addEventListener("keyup",function(event){
         }
     }
 })
-
+/*closing action of pop up message.*/
 close.addEventListener('click', function() {
     popup.style.display = 'none';
 });
 
+/*Adding the task*/
 let addItem = (inputbox) => {
     let listItem = document.createElement("li");
     listItem.innerHTML = `${inputbox}<i>`;

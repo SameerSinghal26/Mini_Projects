@@ -185,9 +185,9 @@ body.dark-mode .popup-content {
     cursor: pointer;
 }
 
-/*dark mode*/
+/*dark & light mode CSS.*/
 
-/* Base styles */
+/* base styles */
 body {
     font-family: 'Poppins', sans-serif;
     --bg-color-light: #ffffff;
@@ -209,6 +209,7 @@ body {
 }
 
 /* Toggle Switch Styles */
+
 .toggle-switch {
     position: fixed;
     top: 20px;
@@ -265,7 +266,8 @@ body {
     background-color: var(--light);
 }
 
-/* Dark mode styles */
+/*dark mode*/
+
 body.dark-mode {
     background-color: var(--bg-color-dark);
     color: var(--text-color-dark);
