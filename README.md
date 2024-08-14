@@ -14,7 +14,7 @@ A simple and intuitive to-do list application that allows users to keep track of
 - Responsive design for both desktop and mobile devices
 - Persistent storage using local storage
 
-[View Project](https://to-do-list-nine-eta-65.vercel.app/) | [Source Code](https://github.com/SameerSinghal26/Mini_Projects/tree/main/todo-list)
+ ### [View Project](https://to-do-list-nine-eta-65.vercel.app/)
 
 
 ### 2. Calculator
@@ -28,7 +28,7 @@ A responsive calculator that performs basic arithmetic operations. Key features 
 - History panel to view past calculations
 - "Clear History" button to remove all past calculations
 
-[View Project](#) | [Source Code](#)
+[View Project](#) 
 
 ## Upcoming Projects
 
