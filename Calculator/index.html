@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p id="popup-message">Error....</p>
+            <button id="close-popup">OK</button>
+        </div>
+    </div>
+    <div class="container">
+        <div id="calculator" class="calculator light">
+            <div class="heading">
+                <button id="history-toggle" class="history-toggle">
+                    <span>📜</span>
+                </button>
+                <h2>Calculator</h2>
+                <button id="theme-toggle" class="theme-toggle">
+                    <span id="theme-icon">🌙</span>
+                </button>
+            </div>
+            <div id="display" class="display"></div>
+            <div class="buttons">
+                <button onclick="clearInput()">AC</button>
+                <button onclick="backspace()">←</button>
+                <button onclick="appendValue('%')">%</button>
+                <button onclick="appendValue('+')" class="operator-btn">+</button>
+                <button onclick="appendValue('1')">1</button>
+                <button onclick="appendValue('2')">2</button>
+                <button onclick="appendValue('3')">3</button>
+                <button onclick="appendValue('-')" class="operator-btn">-</button>
+                <button onclick="appendValue('4')">4</button>
+                <button onclick="appendValue('5')">5</button>
+                <button onclick="appendValue('6')">6</button>
+                <button onclick="appendValue('*')" class="operator-btn">x</button>
+                <button onclick="appendValue('7')">7</button>
+                <button onclick="appendValue('8')">8</button>
+                <button onclick="appendValue('9')">9</button>
+                <button onclick="appendValue('/')" class="operator-btn">/</button>
+                <button onclick="appendValue('00')">00</button>
+                <button onclick="appendValue('0')">0</button>
+                <button onclick="appendValue('.')">.</button>
+                <button onclick="calculate()" class="operator-btn equal">=</button>
+            </div>
+        </div>
+        <div id="history" class="history hide">
+            <h2>History</h2>
+            <div id="history-list"></div>
+            <button onclick="clearHistory()" class="clear-history">Clear History</button>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
