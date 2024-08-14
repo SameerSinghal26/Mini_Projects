@@ -14,7 +14,8 @@ A simple and intuitive to-do list application that allows users to keep track of
 - Responsive design for both desktop and mobile devices
 - Persistent storage using local storage
 
-[View Project](#) | [Source Code](# To-List)
+[View Project]([https://to-do-list-nine-eta-65.vercel.app/]) | [Source Code](https://github.com/SameerSinghal26/Mini_Projects/tree/main/todo-list)
+
 
 ### 2. Calculator
 
