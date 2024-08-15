@@ -32,6 +32,7 @@ function calculate() {
     } catch (error) {
         input = "Error";
         updateDisplay();
+        showErrorPopup("Invalid operation");
     }
 }
 
