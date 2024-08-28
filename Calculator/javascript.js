@@ -45,6 +45,7 @@ function updateHistory() {
     historyList.innerHTML = history.map(item => `<p>${item.input} = ${item.result}</p>`).join("");
 }
 
+// Theme toggle
 document.getElementById("theme-toggle").onclick = function () {
     theme = theme === "light" ? "dark" : "light";
     document.getElementById("calculator").className = `calculator ${theme}`;
