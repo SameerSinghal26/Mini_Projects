@@ -33,9 +33,14 @@ body, html {
 .heading {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
-
+.heading h1 {
+    font-size: 2rem;
+    margin: auto;
+    text-align: center;
+    word-wrap: break-word;
+}
 .key_buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -125,7 +130,7 @@ button:hover {
 .theme-toggle, .history-toggle {
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: 21px;
 }
 
 @media (max-width: 768px) {
@@ -134,8 +139,9 @@ button:hover {
         align-items: center;
     }
 
-    .head_line{
+    .heading h1 {
         font-size: 1.5rem;
+        line-height: 1.2;  
     }
 
     .calculator {
@@ -146,6 +152,7 @@ button:hover {
 
     .buttons {
         gap: 10px; 
+        font-size: auto;
     }
 
     .history {
