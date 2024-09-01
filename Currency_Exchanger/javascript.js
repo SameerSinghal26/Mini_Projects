@@ -51,7 +51,7 @@ function calculate() {
             currencyconversion();
         }
     } catch (error) {
-        input = "Error";
+        input = "Error...";
         updateDisplay1();
         updateDisplay();
         showErrorPopup("Invalid Operation");
@@ -116,25 +116,28 @@ function clearHistory() {
 function showErrorPopup(message) {
     const popup = document.getElementById('popup');
     document.getElementById('popup-message').textContent = message;
-    popup.style.display = 'flex';
+    popup.style.display = 'flex'; 
+
+    document.getElementById('close-popup').onclick = function () {
+        popup.style.display = 'none';  
+    };
 }
-
-// Close the popup
-
-document.getElementById('close-popup').onclick = function() {
-    document.getElementById('popup').style.display = 'none';
-};
 
 // Country adding in the selection box
 
 [fromCur, toCur].forEach((select, i) => {
     for (let curCode in Country_List) {
-        const selected = (i === 0 && curCode === "USD") || (i === 1 && curCode === "GBP") ? "selected" : "";
+        const selected = (i === 0 && curCode === "USD") || (i === 1 && curCode === "INR") ? "selected" : "";
         select.insertAdjacentHTML("beforeend", `<option value="${curCode}" ${selected}>${curCode}</option>`);
     }
+    
+    //Set the default flag for both the country.
+    const code = select.value;
+    const imgTag = select.parentElement.querySelector("img");
+    imgTag.src = `https://flagcdn.com/48x36/${Country_List[code].toLowerCase()}.png`;
+
     select.addEventListener("change", () => {
         const code = select.value;
-        const imgTag = select.parentElement.querySelector("img");
         imgTag.src = `https://flagcdn.com/48x36/${Country_List[code].toLowerCase()}.png`;
     });
 });
