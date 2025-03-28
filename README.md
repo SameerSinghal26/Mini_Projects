@@ -14,7 +14,7 @@ A simple and intuitive to-do list application that allows users to keep track of
 - Responsive design for both desktop and mobile devices
 - Persistent storage using local storage
 
- ### [View Project](https://to-do-list-nine-eta-65.vercel.app/)
+ ### [View Project](https://to-do-list-sam.vercel.app/)
 
 
 ### 2. Calculator
@@ -28,7 +28,19 @@ A responsive calculator that performs basic arithmetic operations. Key features 
 - History panel to view past calculations
 - "Clear History" button to remove all past calculations
 
-[View Project](#) 
+### [View Project](https://calculator-sam.vercel.app/)
+
+### 2. Exchange Mate
+
+This currency calculator not only helps with conversions but also supports essential arithmetic operations seamlessly. Key features include:
+
+- Addition, subtraction, multiplication, and division
+- Real-time display of the current calculation
+- History panel to view past calculations
+- "Clear History" button to remove all past calculations
+- "Reverse" button which swap the convertion.
+
+### [View Project](https://exchange-mate-sam.vercel.app/)
 
 ## Upcoming Projects
 
